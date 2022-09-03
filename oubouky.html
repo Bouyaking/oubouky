@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Association OUBOUKY, ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">    <title >Association Oubouky</title>
+    <link rel="stylesheet" href="obky-style.css">
+    <script src="https://cdnjs.cloudflare.come/ajax/libs/typed.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudeflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+    <style>
+        .spoiler-content{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .spoiler-content.visible{
+            display: inline;
+            width: auto;
+            height: auto;
+            opacity: 1;
+        }
+    </style>
+    <style>
+        .titre p {
+            font-size: 15px;
+            padding: 5px 5px;
+            text-align: justify;
+            color: rgb(39, 38, 38);
+        }    
+        tr th li {
+            text-align: left;
+            margin-left: 10px;
+            color: #009866;
+        }    
+        tr th {    
+            color: blue;
+            font-size: 13px;
+        }    
+        tr th span {    
+            color: red;
+        }
+        .captation{
+            font-size: 25px;
+            font-style: italic;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body onload="slider()">
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo" alt="Oubouky" title="Association Oubouky">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#home" class="menu-btn">Accueil </a></li>
+                    <li><a href="#about" class="menu-btn">A propos</a></li>
+                    <li><a href="#teams" class="menu-btn">Services</a></li>
+                    <li><a href="#skills" class="menu-btn">Projets réalisés</a></li>
+                    <li><a href="#services" class="menu-btn">objectifs</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="img/images (1).png" class="menu-icon" onclick="togglemenu()">
+        </div>
+    
+        <div class="rowe">
+            <div class="col-1">
+                <h2>Association <br> Oubouky </h2>
+                <h3 id="typing"> S'entre aider, c'est avancer et réussir ensemble</h3>
+                <p>(Union/Force)</p>
+                <h4><em> Hay-yu</em></h4>
+                <a href="#about"><button type="button">En savoir plus</button></a>  
+            </div>
+    
+            <div class="col-2">
+                <img src="img/2.jpg" alt="" class="controller" id="slideImg" title="Profile du site">
+    
+            </div>
+        </div>
+    
+        <div class="social-links">
+            <a href="https://www.facebook.com/amantibaxa"><img src="img/fcb.jpg" title="Veuillez visiter notre page facbook"></a>
+            <a href="www.youtube.com"><img src="img/ytb.png" title="Veuillez visiter notre chaine youtube"></a>
+            <a href="https://twitter.com/oubouky"><img src="img/twt.png" title="Veuillez visiter notre page twitter"></a>
+        </div>
+    </div>
+    
+
+    <!--about  section start-->
+
+<section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">A propos de nous</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="img/2.jpg" id="slideImg2">
+            </div>
+            <div class="column right">
+                <div class="text"> <p style="text-decoration: underline;">Association Oubouky :</p> <span class="typing-2"></span></div>
+                    <p>Crée en <span style="text-decoration: underline; cursor: pointer;">2014</span> , l’association Oubouky est connue par ses activités de promotion artisanale et sa préoccupation pour la
+                    préservation de l’environnement et pour le développement communautaire. Siégeant au Nord du pays, <span style="color: #009866; cursor: pointer;" >Obock</span>, d’où sa
+                    dénomination <span style="color: crimson; text-decoration: underline; cursor: pointer;">Oubouky</span>; l’association forment des nombreuses femmes et filles dans la promotion artisanale. Elle se bat
+                    également pour le maintient et la protection de l’environnement ou elle organise des journées pour le nettoyage des
+                    plages. Pour financer ses nombreuses activités au bénéfice de sa communauté, Oubouky tire essentiellement ses fonds,
+                    autre que (la cotisation des membres , membres bienfaiteurs locaux ou Donateurs étrangers), de ses productions artisanales. Elle produits des nombreux merveilleux produits
+                    artisanaux dont elle est fière. Pour refaire vivre nos cultures et nos traditions qui ont tendance à être délaissé,
+                    mains dans les mains avec les autres associations présentes dans la région,<span style="color: #009866; text-decoration: underline; cursor: pointer;">et surtout en comptant sur vous</span> , Oubouky
+                    expose ses produits au vente.
+                    Soyez généreux et prenez part au développement de votre pays et à la renaissance des nos cultures et traditions
+                    anciennes. <br><span style="color: crimson;  cursor: pointer; font-style: italic;">Les petites actions font des grands changements</span>.
+                    <br> <span style="font-size: 19px;">Commander les produits de votre choix dans la partie <a href="#contact">contact</a>  ci-dessous.</span> 
+                            </p>
+
+                    <!--about spoiler section start -->
+
+                        <a href="./galarie.html" class="galerie">Voir nos produits</a> 
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--services  section start-->
+
+<section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title">Nos objectifs</h2>
+        <div class="serv-content">
+            <div class="card"> <a href="./communautaire.html">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Défendre l'intérêt communautaire</div>
+                        <p>Le développement des intercommunalités oblige les associations à changer leurs repères et à s’adapter aux nouvelles
+                        configurations territoriales...</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card"> <a href="./condition de vie.html">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Améliorer les conditions de vie des plus vulnérable</div>
+                        <p>Depuis sa fondation en 2014, Oubouky œuvre pour permettre aux familles les plus défavorisées de la région d’Obock,
+                        d’améliorer leurs conditions de vie...
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card"> <a href="./deforestation.html">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Lutter contre la déforestation et la désertification</div>
+                        <p>La Région d’Obock comme le reste de la République de Djibouti fait face à une avancée
+                            inquiétante et inexorable du
+                            désert...
+
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card"> <a href="./santé.html"></a>
+                <div class="box">
+                    <i class="fas fa-code"></i>
+                    <div class="text">Promotion de la santé et le bien familial</div>
+                    <p>Consciente de l’importance de la planification familiale pour protéger la santé et le bien-être
+                        des jeunes filles et
+                        femmes, ...
+
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+   
+        <!--skills  section start-->
+    <section class="skills" id="skills"> 
+        <div class="max-width">
+            <h2 class="title">Nos principaux projets</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Nos créativités et nos projets réalisés :</div>
+                    <p>Depuis sa fondation, l'association OUBOUKY se démarqua et se distingua des autres associations présentes dans la région
+                    par son dynamisme. Elle réalise des nombreux projets et d’activités dans une durée succinctement courte. Voici certaines
+                    de ses principales activités réalisées :</p>
+                    
+                
+                
+                <span class="spoiler">
+                    <table border="1">
+                        <caption class="captation">Projets réalisés</caption>
+                        <tr class="titre">
+                            <th class="sous-titre">
+                                <p> Intitulé du projets</p>
+                            </th>
+                            <th class="sous-titre">
+                                <p>Date</p>
+                            </th>
+                            <th class="sous-titre">
+                                <p>Résultats obtenus</p>
+                            </th>
+                            <th class="sous-titre">
+                                <p>Montant et sources de financement </p>
+                            </th>
+                        </tr>
+                        <tr class="titre">
+                            <th class="sous-titre">1_ Projet développement artisanale </th>
+                            <th class="sous-titre"><span>2014</span> </th>
+                            <th class="sous-titre">
+                                <li>Formation à 30 femmes artisanes</li>
+                            </th>
+                            <th class="sous-titre"> ADDS: <br> 2 400 000FDJ</th>
+                        </tr>
+                        <tr class="titre">
+                            <th class="sous-titre">2_ Projet de nettoyage des plages d'Obock: Plage Nadif </th>
+                            <th class="sous-titre"><span>Décembre 2015 - Avril 2016</span> </th>
+                            <th class="sous-titre">
+                                <li>Nettoyagede 6 palges;</li>
+                                <li>Sensibilisation de plus 200 personnes pour la protection et la sauvegarde des plages d'Obock;</li>
+                                <li>Mise en palce de 3 comités de gestion littoral</li>
+                            </th>
+                            <th class="sous-titre"> FEM / PNUD: <br> 3 479 000FDJ</th>
+                        </tr>
+                        <tr class="titre">
+                            <th class="sous-titre">3_ Projet de reconstitution des cheptels de 20 ménages les plus pauvres d'indai. </th>
+                            <th class="sous-titre"><span>2015</span> </th>
+                            <th class="sous-titre">
+                                <li>Distribution des cheptels au profits de 20 ménages les plus pauvres d'indai;</li>
+                                <li>Formation des bénéficiaires sur la conduite des troupeaux. </li>
+                            </th>
+                            <th class="sous-titre">PRODERMO / BM : <br> 1 570 000 FDJ</th>
+                        </tr>
+                        <tr class="titre">
+                            <th class="sous-titre">4_ Don de 12 machines à coudre et de 145 couvertures. </th>
+                            <th class="sous-titre"><span>Décembre 2015</span> </th>
+                            <th class="sous-titre">
+                                <li>Distribution de 145 couvertures aux familles les plus vulnérables d’Obock-ville.</li>
+                            </th>
+                            <th class="sous-titre">Don de l’ONG LIA INTERNATIONAL</th>
+                        </tr>
+                        <tr class="titre">
+                            <th class="sous-titre">5_ Don des machines à coudre et d’autres matériels </th>
+                            <th class="sous-titre"><span>2017</span></th>
+                            <th class="sous-titre">
+                                <li>Don des machines à coudre et d’autres matériels aux femmes d’Obock</li>
+                            </th>
+                            <th class="sous-titre">MINISTERE DE LA FEMME ET FAMILLE</th>
+                        </tr>
+                        <tr class="titre">
+                            <th class="sous-titre">6_ Formation en artisanat </th>
+                            <th class="sous-titre"><span>2017</span> </th>
+                            <th class="sous-titre">
+                                <li>Formation en artisanat pour les réfugiés des camps de Holl-Holl et Ali-Addeh</li>
+                            </th>
+                            <th class="sous-titre">DANISH REFUGEE COUNCIL</th>
+                        </tr>
+                        <tr class="titre">
+                            <th class="sous-titre">...</th>
+                            <th class="sous-titre">... </th>
+                            <th class="sous-titre">
+                                <li>...</li>
+                            </th>
+                            <th class="sous-titre">...</th>
+                        </tr>
+                    </table>
+                </span>
+            </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--domaine d'actions  section start-->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Nos domaines d'action</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="img/agro-pastoral.jpg" alt="agro-pastoral">
+                        <div class="text">Développement agro-pastoral</div>
+                        <p>Les activités agricoles, pastorales et piscicoles traditionnelles et modernes à Djibouti en générale et à Obock en
+                        particulier. L’économie est dominée par l’agriculture et l’élevage. Ces deux activités contribuent à plus de 70% des
+                        exploitations, les autres activités économiques telles que la pèche y jouent aussi un rôle très important.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/environnement.jpg" alt="environnement">
+                        <div class="text">Protection et sauvegarde de l'environnement</div>
+                        <p>Pour faire face efficacement aux problématiques du changement climatique, la protection de l’environnement est
+                        indispensable. Pour apporter sa contribution à la sauvegarde de l’environnement, nous agissons sur deux axes essentiels
+                        : la formation et la sensibilisation.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/communautaire.jpg" alt="communautaire">
+                        <div class="text">Développement communautaire</div>
+                        <p>Forte de son engagement soutenu dans le secteur Urbain de Djibouti, nous contribuons considérablement au développement
+                        communautaire de la région. Nous formons des femmes grâce à des ateliers, et soutenons des fonds de développement
+                        communautaire (cours d’alphabétisations…).</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/desertification foret.jpg" alt="desertification">
+                        <div class="text">Lutte contre la désertification</div>
+                        <p>La meilleur stratégie pour limiter la désertification est donc de la stopper « à la racine ». Les principaux moyens de
+                        prévention sont la mise en place d’une agriculture durable qui n’épuise pas le sol, une bonne irrigation des terres et
+                        la sauvegarde des forets.</p>
+                    </div>
+                </div>
+                <div class="card box">
+                    <div class="box">
+                        <img src="img/0.0.jpg" alt="artisanale">
+                        <div class="text">Promotion artisanale</div>
+                        <p>Accompagner la promotion de l’artisanat est d’une part valoriser les entreprises de votre territoire en organisant des
+                        événements grand public et est d’autre part animer les territoires avec des actions collectives autour des métiers de la
+                        production, des métiers d’art et du développement durable.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/communautaire.jpg" alt="santé">
+                        <div class="text">Promotion de la santé communautaire</div>
+                        <p>La santé communautaire fiat partie intégrante de la santé publique en constituant une stratégie au sein des démarches de promotion de la santé. Sa spécificité est d’être populationnelle et non individuelle et de promouvoir et mettre en œuvre une vision globale et de proximité de la santé. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+        <!-- testemonials section start -->
+<section class="teste" id="teste">
+    <div class="max-width">
+        <h2 class="title">Que disent les gens</h2>
+        <div class="teste-content">
+            <div class="teste-row">
+                <div class="teste-col">
+                    <div class="user">
+                        <img src="img/alma.jpg" alt="">
+                        <div class="user-info">
+                            <h4>ALMA SAID <i class="fa fa-twitter"></i></h4>
+                            <small>@almasaid </small>
+                        </div>
+                    </div>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam numquam ipsa quasi aliquid libero quidem inventore, perferendis deleniti temporibus molestiae omnis perspiciatis ut magnam! Temporibus, mollitia vitae. Vitae, reprehenderit corporis!</p>
+                </div>
+                <div class="teste-col">
+                    <div class="user">
+                        <img src="img/ayoub.jpg" alt="">
+                        <div class="user-info">
+                            <h4>AYOUB HERSI <i class="fa fa-twitter"></i></h4>
+                            <small>@ayoubhersi</small>
+                        </div>
+                    </div>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam numquam ipsa quasi aliquid libero quidem inventore,perferendis deleniti temporibus molestiae omnis perspiciatis ut magnam! Temporibus, mollitia vitae. Vitae, reprehenderitcorporis!</p>
+                </div>
+                <div class="teste-col">
+                    <div class="user">
+                        <img src="img/med.jpeg" alt="">
+                        <div class="user-info">
+                            <h4>MOHAMED ALI  <i class="fa fa-twitter"></i></h4>
+                            <small>@medali</small>
+                        </div>
+                    </div>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam numquam ipsa quasi aliquid libero quidem inventore,perferendis deleniti temporibus molestiae omnis perspiciatis ut magnam! Temporibus, mollitia vitae. Vitae, reprehenderitcorporis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+    <!-- contact section start -->
+
+<section class="contact" id="contact" action="email-contact.php">
+    <div class="max-width">
+        <h2 class="title">Contactez nous</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text"> Rejoignez en un click</div>
+                <p>Contacter nous dans notre boite mail ou appeler nous directement pour commander vos produis et pour nous faire part de
+                toute éventuelle recommandation. Priez de préciser le nom et la quantité du produit. Nous sommes à votre entière
+                disposition. Oubouky vous invite également à nous suivre sur nos liens ci-dessous.</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Nom: </div>
+                            <div class="sub-title">Association <span> OUBOUKY</span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Adresse: </div>
+                            <div class="sub-title"> Obock- Quartier Magala</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email: </div>
+                            <div class="sub-title"> <a href="mailto:obouky@gmail.com">obouky@gmail.com</a>  </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Tel / Fixe: </div>
+                            <div class="sub-title">+252 77-82-18-10 <em>et/ou</em> 27-54-14-14  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Ecrivez nous</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Nom" required name="name">
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required name="email">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="field">
+                            <input type="text" placeholder="Objet" required name="objet">
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Votre message" required  name="message"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">  Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+
+    <div class="social-links">
+        <p> Nos liens sociaux :</p>
+        <a href="https://www.facebook.com/amantibaxa"><img src="img/fcb.jpg" title="Veuillez visiter notre page facbook"></a>
+        <a href="www.youtube.com"><img src="img/ytb.png" title="Veuillez visiter notre chaine youtube"></a>
+        <a href="https://twitter.com/oubouky"><img src="img/twt.png" title="Veuillez visiter notre page twitter"></a>
+    </div>
+</section>
+
+
+
+
+<!-- footer section start--> 
+
+<footer>
+    <span>Crée Par <a href="#">Ayoub Hersi</a>  © 2021 All Rights Reserved</span>
+</footer>
+
+<script>
+
+    var menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "190px";
+        }
+        else {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+<script>
+
+    var slideImg2 = document.getElementById("slideImg2");
+
+    var img = new Array(
+        "img/1.jpg",
+        "img/2.jpg",
+        "img/3.jpg",
+        "img/4.jpg",
+        "img/5.jpg",
+        "img/maison/6.jpg",
+        "img/7.jpg",
+        "img/8.jpg",
+        "img/maison/9.jpg",
+        "img/maison/10.jpg",
+        "img/maison/11.jpg",
+        "img/maison/12.jpg",
+        "img/maison/13.jpg",
+        "img/14.jpg",
+        "img/15.jpg",
+        "img/16.jpg",
+        "img/17.jpg",
+        "img/maison/19.jpg",
+        "img/maison/20.jpg",
+        "img/maison/21.jpg",
+        "img/maison/22.jpg",
+        "img/maison/23.jpg",
+        "img/maison/24.jpg",
+        "img/maison/25.jpg",
+        "img/maison/26.jpg",
+        "img/27.jpg",
+        "img/28.jpg",
+        "img/maison/29.jpg",
+        "img/maison/30.jpg",
+        "img/maison/31.jpg",
+        "img/maison/32.jpg"
+    );
+
+    var len = img.length;
+    var i = 0;
+
+    function slider() {
+        if (i > len - 1) {
+            i = 0;
+        }
+        slideImg2.src = img[i];
+        i++;
+        setTimeout('slider()', 2000);
+    }
+</script>
+<script>    
+
+        /* spoiler*/
+
+        var button = document.querySelector('.text button')
+        button.addEventListener('click', function () {
+            this.nextElementSibling.classList.add('visible')
+            this.parentNode.removeChild(this)
+        })
+
+        /* typing*/
+    var typed = new Typed(".typing", {
+            strings: ["Youtuber", "Dragueur", "Developer", "Blogger", "Basketeur", "Chatteur", "Menteur", "Moteur"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+        var typed = new Typed(".typing-2", {
+            strings: ["Youtuber", "Designer", "Developer", "Blogger", "Basketeur", "Chatteur", "Menteur", "Moteur"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+</script>
+<script>
+
+    // owl carousel
+    $('.carousel').owlcarousel({
+        margin: 20,
+        loop: false,
+        autoplayTimeOut:2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0:{
+                items: 1,
+                nav: false,
+            },
+            600:{
+                items: 2,
+                nav: false,
+            },
+            1000:{
+                items: 3,
+                nav: false,
+            },
+        }
+    });
+</script>
+
+<script src="spoiler.js"></script>
+</body>
+</html>
